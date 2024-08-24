@@ -8,6 +8,7 @@ import RSVP from './components/RSVP';
 import Seeyou from './components/Seeyou';
 import Sidebar from './components/Sidebar';
 import Where from './components/Where';
+import Organization from './components/Organization';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Countdown />
         <Gallery />
         <Seeyou />
+        <Organization />
         <Gifts />
         <Where />
         <RSVP />
