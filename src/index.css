@@ -809,10 +809,11 @@ body.slide .oliven-nav-toggle {
 }
 .header.parallaxie {
   background-image: url(./assets/images/portada-2.jpg);
+  background-position: center;
 }
 @media screen and (max-width: 991px) {
     .header {
-        background-position: center center;
+        background-position: initial !important;
     }
     .header .caption h1 {
         font-size: 40px;
@@ -1006,7 +1007,9 @@ body.slide .oliven-nav-toggle {
 /* ======= Wedding Countdown style ======= */
 #countdown {
     text-align: center;
+    height: 550px;
     background-image: url(./assets/images/married.jpg);
+    background-position: right;
 }
 #countdown .section-head {
     margin-bottom: 15px;
