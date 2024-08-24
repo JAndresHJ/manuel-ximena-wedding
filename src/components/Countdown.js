@@ -9,7 +9,7 @@ function Countdown() {
       hour = minute * 60,
       day = hour * 24;
 
-    const weddingDate = 'Mar 19, 2023 00:00:00';
+    const weddingDate = 'Dec 27, 2024 00:00:00';
     const countDown = new Date(weddingDate).getTime();
 
     const interval = setInterval(() => {
@@ -52,7 +52,7 @@ function Countdown() {
         <div className='container'>
           <div className='row'>
             <div className='section-head col-md-12'>
-              <h4>Seremos una familia en:</h4>
+              <h4>Queremos que nos acompañen.</h4>
             </div>
           </div>
           <div className='row'>

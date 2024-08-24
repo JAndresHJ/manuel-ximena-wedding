@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { db } from '../firebase';
+// import { db } from '../firebase';
 import { uid } from 'uid';
 import { set, ref } from 'firebase/database';
 
@@ -31,10 +31,10 @@ function RSVP() {
   const onSubmit = (evt) => {
     evt.preventDefault();
     const uuid = uid();
-    set(ref(db, `${uuid}/`), {
+    /*     set(ref(db, `${uuid}/`), {
       ...formState,
       hasGuests,
-    });
+    }); */
     alert('Respuesta enviada, te esperamos!');
     setFormState(initalFormState);
   };

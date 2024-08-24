@@ -6,6 +6,27 @@ import gallery4 from '../assets/images/galeria4.jpg';
 import gallery5 from '../assets/images/galeria5.jpg';
 import gallery6 from '../assets/images/galeria6.jpg';
 
+const galleryImages = [
+  { src: gallery1, alt: 'Gallery Image 1' },
+  { src: gallery2, alt: 'Gallery Image 2' },
+  { src: gallery3, alt: 'Gallery Image 3' },
+  { src: gallery4, alt: 'Gallery Image 4' },
+  { src: gallery5, alt: 'Gallery Image 5' },
+  { src: gallery6, alt: 'Gallery Image 6' },
+];
+
+function GalleryItem({ src, alt }) {
+  return (
+    <div className={`col-md-4 gallery-item`}>
+      <div className='gallery-box'>
+        <div className='gallery-img'>
+          <img src={src} className='img-fluid mx-auto d-block' alt={alt} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Gallery() {
   return (
     <div id='gallery' className='section-padding'>
@@ -19,72 +40,9 @@ function Gallery() {
       </div>
       <div className='container'>
         <div className='row gallery-filter mt-3'>
-          <div className='col-md-4 gallery-item ceremony'>
-            <div className='gallery-box'>
-              <div className='gallery-img'>
-                <img
-                  src={gallery1}
-                  className='img-fluid mx-auto d-block'
-                  alt=''
-                />
-              </div>
-            </div>
-          </div>
-          <div className='col-md-4 gallery-item party'>
-            <div className='gallery-box'>
-              <div className='gallery-img'>
-                <img
-                  src={gallery2}
-                  className='img-fluid mx-auto d-block'
-                  alt=''
-                />
-              </div>
-            </div>
-          </div>
-          <div className='col-md-4 gallery-item ceremony'>
-            <div className='gallery-box'>
-              <div className='gallery-img'>
-                <img
-                  src={gallery3}
-                  className='img-fluid mx-auto d-block'
-                  alt=''
-                />
-              </div>
-            </div>
-          </div>
-          <div className='col-md-4 gallery-item party'>
-            <div className='gallery-box'>
-              <div className='gallery-img'>
-                <img
-                  src={gallery4}
-                  className='img-fluid mx-auto d-block'
-                  alt=''
-                />
-              </div>
-            </div>
-          </div>
-          <div className='col-md-4 gallery-item ceremony'>
-            <div className='gallery-box'>
-              <div className='gallery-img'>
-                <img
-                  src={gallery5}
-                  className='img-fluid mx-auto d-block'
-                  alt=''
-                />
-              </div>
-            </div>
-          </div>
-          <div className='col-md-4 gallery-item party'>
-            <div className='gallery-box'>
-              <div className='gallery-img'>
-                <img
-                  src={gallery6}
-                  className='img-fluid mx-auto d-block'
-                  alt=''
-                />
-              </div>
-            </div>
-          </div>
+          {galleryImages.map((image, index) => (
+            <GalleryItem key={`${index}-${image.alt}`} {...image} />
+          ))}
         </div>
       </div>
     </div>

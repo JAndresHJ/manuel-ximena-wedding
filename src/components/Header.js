@@ -7,10 +7,10 @@ function Header() {
         <div className='row'>
           <div className='col-md-12 text-center caption'>
             <h1 className='animate-box' data-animate-effect='fadeInUp'>
-              Ana & Andrés
+              Manuel & Ximena
             </h1>
             <h5 className='animate-box' data-animate-effect='fadeInUp'>
-              19 de Marzo, 2023
+              27 de Diciembre, 2024
             </h5>
           </div>
         </div>

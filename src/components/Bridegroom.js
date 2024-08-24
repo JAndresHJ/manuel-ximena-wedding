@@ -9,9 +9,9 @@ function Bridegroom() {
             className='col-md-12 text-center animate-box'
             data-animate-effect='fadeInUp'
           >
-            <h3 className='oliven-couple-title'>Nos vamos a casar!</h3>
+            <h3 className='oliven-couple-title'>!Nos casaremos!</h3>
             <h4 className='oliven-couple-subtitle'>
-              19 de Marzo, 2023 — Zapopan, Jalisco
+              Viernes 27 de Diciembre del 2024
             </h4>
           </div>
         </div>

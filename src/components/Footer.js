@@ -15,7 +15,7 @@ function Footer() {
                 </span>
               </div>
             </h2>
-            <p className='copyright'>Marzo 19, 2023</p>
+            <p className='copyright'>Diciembre 27, 2024</p>
           </div>
         </div>
       </div>

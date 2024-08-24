@@ -26,9 +26,9 @@ function Sidebar() {
           <a href='/'>
             <img src={Logo} alt='leafs' />
             <span>
-              Ana <small>&</small> Andrés
+              Manuel <small>&</small> Ximena
             </span>
-            <h6>19.03.2023</h6>
+            <h6>27.12.2024</h6>
           </a>
         </div>
         <nav className='oliven-main-menu'>
@@ -38,9 +38,6 @@ function Sidebar() {
             </li>
             <li>
               <a href='#couple'>Nosotros</a>
-            </li>
-            <li>
-              <a href='#story'>Nuestra Historia</a>
             </li>
             <li>
               <a href='#gifts'>Mesa de regalos</a>
@@ -59,9 +56,9 @@ function Sidebar() {
         <div className='footer1'>
           <span className='separator'></span>
           <p>
-            Boda Ana & Andrés
+            Boda Manuel & Ximena
             <br />
-            19 de Marzo 2023
+            29 de Diciembre 2024
           </p>
         </div>
       </aside>
