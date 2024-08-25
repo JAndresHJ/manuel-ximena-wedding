@@ -311,6 +311,18 @@ input[type=checkbox]:checked:after {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+.section-padding-gallery {
+    padding: 0;
+}
+
+.section-padding-seeyou {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .section-padding-gift {
     padding-top: 40px;
     padding-bottom: 20px;
@@ -781,12 +793,13 @@ body.slide .oliven-nav-toggle {
 .header {
     min-height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 .header .caption .o-hidden {
     display: inline-block;
 }
 .header .caption h5 {
-   font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 5px;
@@ -819,7 +832,8 @@ body.slide .oliven-nav-toggle {
         font-size: 40px;
     }
     .header .caption h5 {
-        font-size: 12px;
+        font-size: 16px;
+        font-weight: bold;
     }
 }
 /* bounce */
@@ -849,6 +863,23 @@ body.slide .oliven-nav-toggle {
     opacity: 0;
     -webkit-transition: all .5s;
     transition: all .5s;
+}
+
+.header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Change the color and opacity as needed */
+}
+  
+.header img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -1145,7 +1176,7 @@ body.slide .oliven-nav-toggle {
 
 
 /* ===== Organization style  ===== */
-.organization .bord-box {
+  .organization .bord-box {
     overflow: hidden;
     background-image: url(./assets/images/slider.jpg);
   }
@@ -1188,7 +1219,11 @@ body.slide .oliven-nav-toggle {
   .organization .item-box.bg-img {
       position: relative;
       border: 0;
-      z-index: 2; }
+      z-index: 2; 
+  }
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
   .organization .item-box.bg-img:hover:after {
         background: rgba(0, 0, 0, 0.4); 
   }
@@ -1213,6 +1248,7 @@ body.slide .oliven-nav-toggle {
 /* ======= See You style ======= */
 .seeyou {
   background-image: url(./assets/images/married-2.jpg);
+  background-position: center;
 }
 .seeyou .section-head span {
     color: #fff;

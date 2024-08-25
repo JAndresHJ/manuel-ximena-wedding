@@ -40,13 +40,10 @@ function Sidebar() {
               <a href='#couple'>Nosotros</a>
             </li>
             <li>
+              <li>
+                <a href='#whenwhere'>Cuándo & Dónde?</a>
+              </li>
               <a href='#gifts'>Mesa de regalos</a>
-            </li>
-            <li>
-              <a href='#gallery'>Galería</a>
-            </li>
-            <li>
-              <a href='#whenwhere'>Cuándo & Dónde?</a>
             </li>
             <li>
               <a href='#rsvp'>Registro</a>

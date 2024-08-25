@@ -6,15 +6,13 @@ import { set, ref } from 'firebase/database';
 const initalFormState = {
   name: '',
   phone: '',
-  guests: '',
   message: '',
 };
 
 function RSVP() {
   const [formState, setFormState] = useState(initalFormState);
-  const [hasGuests, setHasGuests] = useState(false);
 
-  const { name, phone, guests, message } = formState;
+  const { name, phone, message } = formState;
 
   const handleChange = (evt) => {
     const value = evt.target.value;
@@ -22,10 +20,6 @@ function RSVP() {
       ...formState,
       [evt.target.name]: value,
     });
-  };
-
-  const toggleGuestsCheck = () => {
-    setHasGuests(!hasGuests);
   };
 
   const onSubmit = (evt) => {
@@ -72,40 +66,6 @@ function RSVP() {
                     name='phone'
                     onChange={handleChange}
                     value={phone}
-                  />
-                </div>
-              </div>
-              <div className='col-md-12'>
-                <div className='form-group'>
-                  <input
-                    className='form-check-input'
-                    type='checkbox'
-                    value=''
-                    id='flexCheckDefault'
-                    onChange={toggleGuestsCheck}
-                    checked={hasGuests}
-                  />
-                  <label
-                    className='form-check-label'
-                    htmlFor='flexCheckDefault'
-                  >
-                    Llevas acompañantes?
-                  </label>
-                </div>
-              </div>
-              <div className='col-md-12'>
-                <div className='form-group'>
-                  <input
-                    required={hasGuests}
-                    type='number'
-                    className='form-control'
-                    placeholder='Cuántos acompañantes?'
-                    min={0}
-                    max={5}
-                    name='guests'
-                    onChange={handleChange}
-                    value={guests}
-                    disabled={!hasGuests}
                   />
                 </div>
               </div>

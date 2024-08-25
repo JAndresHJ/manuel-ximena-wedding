@@ -14,15 +14,6 @@ function Header() {
             </h5>
           </div>
         </div>
-        <div className='row'>
-          <div className='col-md-12'>
-            <div className='arrow bounce text-center'>
-              <a href='#couple'>
-                <i className='ti-heart'></i>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </header>
   );

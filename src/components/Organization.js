@@ -6,8 +6,8 @@ function Organization() {
       <div className='container'>
         <div className='row'>
           <div className='col-md-12 mb-30'>
-            <span className='oliven-title-meta'>Wedding</span>
-            <h2 className='oliven-title'>Organization</h2>
+            <span className='oliven-title-meta'>Ceremonia</span>
+            <h2 className='oliven-title'>¿Cuándo y dónde?</h2>
           </div>
         </div>
         <div

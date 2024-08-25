@@ -11,7 +11,7 @@ function Footer() {
               <div>
                 <img src={Logo} alt='leafs' />
                 <span>
-                  Ana <small>&</small> Andrés
+                  Manuel <small>&</small> Ximena
                 </span>
               </div>
             </h2>

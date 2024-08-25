@@ -7,7 +7,6 @@ import Header from './components/Header';
 import RSVP from './components/RSVP';
 import Seeyou from './components/Seeyou';
 import Sidebar from './components/Sidebar';
-import Where from './components/Where';
 import Organization from './components/Organization';
 
 function App() {
@@ -19,10 +18,9 @@ function App() {
         <Bridegroom />
         <Countdown />
         <Gallery />
-        <Seeyou />
         <Organization />
         <Gifts />
-        <Where />
+        <Seeyou />
         <RSVP />
         <Footer />
       </div>
