@@ -1179,10 +1179,11 @@ body.slide .oliven-nav-toggle {
   .organization .bord-box {
     overflow: hidden;
     background-image: url(./assets/images/slider.jpg);
+    background-position: center;
+    min-height: 489px;
   }
   .organization .item-box {
     padding: 60px 30px;
-    height: 100%;
     background-color: #fff;
     border: 1px solid #F6F1F0;
     border-right: 0;
@@ -1219,14 +1220,16 @@ body.slide .oliven-nav-toggle {
   .organization .item-box.bg-img {
       position: relative;
       border: 0;
-      z-index: 2; 
+      z-index: 2;
   }
+
   .overlay {
     background: rgba(0, 0, 0, 0.5);
   }
   .organization .item-box.bg-img:hover:after {
         background: rgba(0, 0, 0, 0.4); 
   }
+ 
   .organization .item-box.bg-img:after {
         content: '';
         position: absolute;

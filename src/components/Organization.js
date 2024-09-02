@@ -17,18 +17,16 @@ function Organization() {
           <div className='col-md-6 item-box'>
             <h2 className='custom-font numb'>01</h2>
             <h6 className='title'>Ceremonia Religiosa</h6>
-            <p>
-              Parroquia San Luis Obispo Calle Cuahutemoc 6A, Centro Colotlán
-              Jalisco
-            </p>
+            <p>Parroquia San Luis Obispo Jalisco</p>
+            <p>Calle Cuahutémoc 6A, Centro</p>
+            <p>Colotlán, Jálisco</p>
           </div>
           <div className='col-md-6 item-box'>
             <h2 className='custom-font numb'>02</h2>
-            <h6 className='title'>Ceremonia Civil y Fiesta</h6>
-            <p>
-              Campestre Hacienda Vieja;
-              <br />
-            </p>
+            <h6 className='title'>Ceremonia Civil & Fiesta</h6>
+            <p>Campestre Hacienda Vieja</p>
+            <p>Calle Obregon 87</p>
+            <p>Colotlán, Jalisco</p>
           </div>
         </div>
       </div>
