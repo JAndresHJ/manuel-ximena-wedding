@@ -2,7 +2,7 @@ import React from 'react';
 
 function Organization() {
   return (
-    <div id='organization' className='organization section-padding bg-pink'>
+    <div id='whenwhere' className='organization section-padding bg-pink'>
       <div className='container'>
         <div className='row'>
           <div className='col-md-12 mb-30'>

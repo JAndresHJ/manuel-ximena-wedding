@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-// import { db } from '../firebase';
-import { uid } from 'uid';
-import { set, ref } from 'firebase/database';
+import app from '../firebase';
+import { set, ref, getDatabase } from 'firebase/database';
 
 const initalFormState = {
   name: '',
   phone: '',
   message: '',
 };
+
+const db = getDatabase(app);
 
 function RSVP() {
   const [formState, setFormState] = useState(initalFormState);
@@ -24,12 +25,18 @@ function RSVP() {
 
   const onSubmit = (evt) => {
     evt.preventDefault();
-    const uuid = uid();
-    /*     set(ref(db, `${uuid}/`), {
+
+    const folderName = name.trim().replace(/[^a-zA-ZÀ-ú]+/g, '');
+
+    set(ref(db, `${folderName}/`), {
       ...formState,
-      hasGuests,
-    }); */
-    alert('Respuesta enviada, te esperamos!');
+    })
+      .then(() => {
+        alert('Respuesta enviada, te esperamos!');
+      })
+      .catch((error) => {
+        alert('Error: ', error.message);
+      });
     setFormState(initalFormState);
   };
 
