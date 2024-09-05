@@ -9,9 +9,6 @@ function Header() {
             <h1 className='animate-box' data-animate-effect='fadeInUp'>
               Manuel & Ximena
             </h1>
-            <h5 className='animate-box' data-animate-effect='fadeInUp'>
-              27 de Diciembre, 2024
-            </h5>
           </div>
         </div>
       </div>

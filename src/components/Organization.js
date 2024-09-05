@@ -17,6 +17,7 @@ function Organization() {
           <div className='col-md-6 item-box'>
             <h2 className='custom-font numb'>01</h2>
             <h6 className='title'>Ceremonia Religiosa</h6>
+            <p>Hora: 6:00 p.m</p>
             <p>Parroquia San Luis Obispo Jalisco</p>
             <p>Calle Cuahutémoc 6A, Centro</p>
             <p>Colotlán, Jálisco</p>
@@ -33,6 +34,7 @@ function Organization() {
           <div className='col-md-6 item-box'>
             <h2 className='custom-font numb'>02</h2>
             <h6 className='title'>Ceremonia Civil & Fiesta</h6>
+            <p>Hora: 8:00 p.m - 2:00 a.m</p>
             <p>Campestre Hacienda Vieja</p>
             <p>Calle Obregon 87</p>
             <p>Colotlán, Jalisco</p>
