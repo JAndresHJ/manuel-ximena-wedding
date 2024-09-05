@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import Logo from '../assets/images/logo.png';
 
+const sections = [
+  { href: '#home', title: 'Inicio' },
+  { href: '#couple', title: 'Nosotros' },
+  { href: '#whenwhere', title: '¿Cuándo & Dónde?' },
+  { href: '#gifts', title: 'Mesa de regalos' },
+  { href: '#rsvp', title: 'Registro' },
+];
+
 function Sidebar() {
   const [show, setShow] = useState(false);
 
@@ -33,21 +41,11 @@ function Sidebar() {
         </div>
         <nav className='oliven-main-menu'>
           <ul>
-            <li>
-              <a href='#home'>Inicio</a>
-            </li>
-            <li>
-              <a href='#couple'>Nosotros</a>
-            </li>
-            <li>
-              <a href='#whenwhere'>¿Cuándo & Dónde?</a>
-            </li>
-            <li>
-              <a href='#gifts'>Mesa de regalos</a>
-            </li>
-            <li>
-              <a href='#rsvp'>Registro</a>
-            </li>
+            {sections.map(({ href, title }) => (
+              <li>
+                <a href={href}>{title}</a>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className='footer1'>
@@ -55,7 +53,7 @@ function Sidebar() {
           <p>
             Boda Manuel & Ximena
             <br />
-            29 de Diciembre 2024
+            27 de Diciembre 2024
           </p>
         </div>
       </aside>
