@@ -42,7 +42,7 @@ function Sidebar() {
         <nav className='oliven-main-menu'>
           <ul>
             {sections.map(({ href, title }) => (
-              <li>
+              <li key={href}>
                 <a href={href}>{title}</a>
               </li>
             ))}

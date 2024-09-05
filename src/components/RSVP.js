@@ -26,7 +26,10 @@ function RSVP() {
   const onSubmit = (evt) => {
     evt.preventDefault();
 
-    const folderName = name.trim().replace(/[^a-zA-ZÀ-ú]+/g, '');
+    const folderName = name
+      .split(' ')
+      .join('_')
+      .replace(/[^a-zA-ZÀ-ú_]+/g, '');
 
     set(ref(db, `${folderName}/`), {
       ...formState,

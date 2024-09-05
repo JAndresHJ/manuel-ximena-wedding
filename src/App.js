@@ -19,8 +19,8 @@ function App() {
         <Countdown />
         <Gallery />
         <Organization />
-        <Gifts />
         <Seeyou />
+        <Gifts />
         <RSVP />
         <Footer />
       </div>

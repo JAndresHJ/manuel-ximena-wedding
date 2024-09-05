@@ -9,6 +9,7 @@ function Header() {
             <h1 className='animate-box' data-animate-effect='fadeInUp'>
               Manuel & Ximena
             </h1>
+            <div style={{ height: '100px' }} />
           </div>
         </div>
       </div>
