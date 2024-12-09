@@ -24,11 +24,11 @@ function Gifts() {
                     Banorte<i className='ti-heart'></i>
                   </h6>
                   <p>Nombre: Manuel Jara Navarro</p>
-                  <p>Tarjeta: 4189 1400 5130 0183</p>
+                  <p>Tarjeta: 4189 1430 1628 6596</p>
                   <p>CLABE: 072320012185322040</p>
                   <p>
                     En caso de hacer una transferencia o depósito, por favor
-                    háznolo saber para poder darte las gracias.
+                    háznoslo saber para poder darte las gracias.
                   </p>
                 </div>
               </div>
